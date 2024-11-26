@@ -50,6 +50,7 @@ class EasyMultilevelNavMenu {
     function easy_multi_menu_shortcode( $atts = array(), $content = null ){
         // normalize attribute keys, lowercase
         $atts = array_change_key_case( (array) $atts, CASE_LOWER );
+		$tag = '';
         $html = '';
         $html_menu = '';
 
@@ -98,6 +99,7 @@ class EasyMultilevelNavMenu {
     function easy_multi_menu_btn_shortcode( $atts = array(), $content = null ){
         // normalize attribute keys, lowercase
         $atts = array_change_key_case( (array) $atts, CASE_LOWER );
+		$tag = '';
         $html = '';
 
         // override default attributes with user attributes
